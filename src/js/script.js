@@ -22,7 +22,8 @@ const slider = tns({
     mouseDrag: true,
     nav: true,
     navPosition: "bottom",
-    autoplay: true
+    autoplay: true,
+    autoplayButtonOutput: false
   });
 
 document.querySelector('.prev').onclick = function () {
