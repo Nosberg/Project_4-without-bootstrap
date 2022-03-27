@@ -1,0 +1,74 @@
+.footer
+    position: relative
+    height: 630px
+    &__info
+        position: absolute
+        top: 0
+        left: 50%
+        transform: translateX(-50%)
+        background-color: $red
+        width: 460px
+        height: 270px
+        text-align: center
+        padding: 50px 68px 60px 68px
+    &__addr
+        font-weight: 500
+        margin-bottom: 25px
+        font-size: 20px
+        text-align: center
+        color: #FFFFFF 
+    &__phone
+        display: block
+        font-size: 20px
+        text-align: center
+        color: #FFFFFF
+        &:hover
+            color: #fff
+    &__social
+        margin-top: 36px
+        display: flex
+        justify-content: center
+    &__social-item
+        margin: 0 15px
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 53px
+        height: 53px
+        border-radius: 100%
+        border: 2px solid #FFFFFF
+        transition: 0.5s all
+        svg
+            fill: #fff
+            width: 23px
+            height: 25px
+        &:hover
+            border-color: black
+
+@media screen and ( max-width: 1100px )
+    .footer
+        &__info
+            top: 120px
+            left: 180px
+            width: 380px
+        &__addr
+            font-size: 15px
+@media screen and ( max-width: 769px )
+    .footer
+        &__info
+            top: 360px
+
+@media screen and ( max-width: 575px )
+    .footer
+        &__info
+            top: 430px
+            height: 180px
+            padding: 0
+            padding-top: 20px
+        &__social
+            margin-top: 15px
+@media screen and ( max-width: 381px )
+    .footer
+        &__info
+            width: 320px
+            left: 160px
