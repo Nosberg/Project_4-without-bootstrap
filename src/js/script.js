@@ -97,5 +97,17 @@ document.querySelector('.next').onclick = function () {
   validForms('#consultation form');
   validForms('#order form');
 
-  $('input[name=phone]').mask("+7 (999) 999-99-99")
+  $('input[name=phone]').mask("+7 (999) 999-99-99");
+
+  //Smooth scroll and pageup
+
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 1600) {
+      $('.pageup').fadeIn();
+    } else {
+      $('.pageup').fadeOut();
+    }
+  });
+
+  new WOW().init();
 })(jQuery);

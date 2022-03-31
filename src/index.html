@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,10 +9,11 @@
     <link rel="stylesheet" href="css/fonts.css">
     <!-- <link rel="stylesheet" type="text/css" href="css/slick.css"/> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-    <section class="promo">
+    <section id="up" class="promo">
         <div class="container">
             <header class="header">
                 <a href="#" class="header__logo">
@@ -60,7 +61,7 @@
                     <p>Наши сотрудники всегда готовы поделиться своим опытом, так как сами бегают полумарафоны, переплыли Босфор, готовятся к соревнованиям по триатлону!</p>
                 </div>
                 <div class="benefits__icon">
-                    <img src="icons/heart.png" alt="">
+                    <img src="icons/heart.png" alt="" class="benefits__item_animated benefits__item">
                     <div class="benefits__subheader"> Заботимся о здоровье</div>
                     <p>Мы работаем для того, чтобы Ваши занятия спортом шли на пользу Вашему здоровью и были в радость Вам и Вашим близким!</p>
                 </div>
@@ -92,7 +93,7 @@
         </div>
     </section>
 
-    <section class="carousel">
+    <div class="carousel">
         <div class="container">
             <div class="carousel__inner">
                 <div>
@@ -105,10 +106,10 @@
                     <img src="img/Slide_3.jpg" alt="slide">
                 </div>
             </div>
-            <button type="button" class="prev"><img src="icons/left.svg"></button>
-            <button type="button" class="next"><img src="icons/right.png"></button>
+            <button type="button" class="prev"><img src="icons/left.svg" alt="leftArrow"></button>
+            <button type="button" class="next"><img src="icons/right.png" alt="rightArrow"></button>
         </div>
-    </section>
+    </div>
 
     <section class="catalog">
         <div class="container">
@@ -361,7 +362,7 @@
     <section class="review">
         <div class="container">
             <h2 class="title title_review">отзывы клиентов</h2>
-            <div class="review__item">
+            <div data-wow-duration="1s" class="review__item animate__animated animate__fadeInUp wow">
                 <img src="img/review_photo_1.png" alt="" class="review__photo">
                 <div class="review__descr">
                     <span class="review__name">Ирина Иванченко</span>
@@ -370,7 +371,7 @@
                         Спасибо, RunSmart! </div>
                 </div>
             </div>
-            <div class="review__item">
+            <div data-wow-duration="1s" class="review__item animate__animated animate__fadeInUp wow">
                 <img src="img/review_photo_2.png" alt="" class="review__photo">
                 <div class="review__descr">
                     <span class="review__name">Иван Сёмочкин</span>
@@ -378,7 +379,7 @@
                     <div class="review__text">Крутая штука-пульсометр. Обычно без них бегал. Оказывается только хуже себе делал. Купил пульсометр, ещё в подарок получил тренировку. Со мной вместе провели первую тренировку, научили пользоваться новым гаджетом. Также объяснили основы анатомии, составили план тренировок на месяц вперёд.<br><br> С ними подготовился к своему первому полумарафону! Спасибо!!!</div>
                 </div>
             </div>
-            <div class="review__item">
+            <div data-wow-duration="1s" class="review__item animate__animated animate__fadeInUp wow">
                 <img src="img/review_photo_3.png" alt="" class="review__photo">
                 <div class="review__descr">
                     <span class="review__name">Юлия Дашкина</span>
@@ -440,10 +441,13 @@
             <div class="modal__descr">Наш менеджер свяжется с вами в ближайшее время!</div>
         </div>
     </div>
+
+    <a href="#up" class="pageup"><img src="icons/angle-up-solid.svg" alt="up"></a>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
